@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracias por tu mensaje | BuildRight Construcción</title>
+    
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .thank-you-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 75vh;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .success-icon {
+            color: var(--primary-color);
+            font-size: 6rem;
+            margin-bottom: 2rem;
+            animation: bounce 2s ease-in-out;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-30px);}
+            60% {transform: translateY(-15px);}
+        }
+        
+        .thank-you-title {
+            font-size: 3.6rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark-heading);
+        }
+        
+        .thank-you-text {
+            font-size: 1.8rem;
+            margin-bottom: 3rem;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/construction-logo.svg" alt="BuildRight Construcción Logo">
+                        <span>BuildRight Construcción</span>
+                    </a>
+                </div>
+                
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html#home" class="nav-link" data-section="home">Inicio</a></li>
+                        <li><a href="index.html#services" class="nav-link" data-section="services">Servicios</a></li>
+                        <li><a href="index.html#projects" class="nav-link" data-section="projects">Proyectos</a></li>
+                        <li><a href="index.html#thermal-law" class="nav-link new-feature" data-section="thermal-law">Nueva Ley Térmica</a></li>
+                        <li><a href="index.html#contact" class="nav-link" data-section="contact">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main style="margin-top: 10rem;">
+        <div class="container">
+            <div class="thank-you-container" data-aos="fade-up">
+                <i class="fas fa-check-circle success-icon"></i>
+                <h1 class="thank-you-title">¡Gracias por tu mensaje!</h1>
+                <p class="thank-you-text">Hemos recibido tu solicitud y nos pondremos en contacto contigo lo más pronto posible. Agradecemos tu interés en nuestros servicios de construcción.</p>
+                <a href="index.html" class="btn primary-btn">Volver a la página principal</a>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/construction-logo.svg" alt="BuildRight Construcción Logo">
+                    <span>BuildRight Construcción</span>
+                </div>
+                
+                <div class="footer-contact">
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Principal 1234, Santiago, Chile</p>
+                    <p><i class="fas fa-phone"></i> +56 2 1234 5678</p>
+                    <p><i class="fas fa-envelope"></i> info@buildright-construction.com</p>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 BuildRight Construcción. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+    </script>
+</body>
+</html>
