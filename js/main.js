@@ -22,12 +22,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    function updateCurrentPageIndicator(sectionId) {
+        const currentPageIndicator = document.querySelector('.current-page-indicator');
+        if (currentPageIndicator) {
+            const sectionNames = {
+                'home': 'Inicio',
+                'services': 'Servicios',
+                'projects': 'Proyectos',
+                'thermal-law': 'Ley Térmica',
+                'contact': 'Contacto'
+            };
+            currentPageIndicator.textContent = sectionNames[sectionId] || '';
+        }
+    }
+
     function navigateToSection(sectionId) {
         navLinks.forEach(item => item.classList.remove('active'));
         const activeNavLink = document.querySelector(`.nav-link[data-section="${sectionId}"]`);
         if (activeNavLink) {
             activeNavLink.classList.add('active');
         }
+        updateCurrentPageIndicator(sectionId);
         
         sections.forEach(section => {
             section.classList.remove('active');
