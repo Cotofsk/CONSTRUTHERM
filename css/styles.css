@@ -250,17 +250,15 @@ header {
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
 
-.current-page-indicator {
-    display: none;
-    font-weight: 600;
-    color: var(--primary-color);
-    margin-right: 8rem;  /* 5px de espacio entre texto e ícono */
-    text-align: right;      /* Alineación interna del texto */
-    white-space: nowrap;    /* Evita saltos de línea */
-    direction: rtl;
-   
+    .current-page-indicator {
+        margin-left: 0px;
+        margin-right: 8rem;
+        font-weight: 600;
+        color: #adadad;
+        text-align: right;
+        direction: rtl;
+    }
 }
-
     .header-content {
         padding: var(--spacing-xs);
         justify-content: flex-start;
