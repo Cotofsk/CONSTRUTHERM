@@ -433,6 +433,7 @@ header {
     width: 3rem;
     height: 2.1rem;
     cursor: pointer;
+    align-items: center;
 }
 
 .mobile-menu-toggle span {
