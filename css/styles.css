@@ -250,13 +250,18 @@ header {
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
 
+.current-page-indicator {
+    display: none; /* Oculto por defecto en todas las pantallas */
+    margin-left: auto;
+    margin-right: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+@media (max-width: 768px) {
     .current-page-indicator {
-        display: block;
-        margin-left: auto;
-        margin-right: 1rem;
-        font-weight: 600;
-        color: var(--primary-color);
+        display: block; /* Visible solo en móviles */
     }
+}
 
     .header-content {
         padding: var(--spacing-xs);
