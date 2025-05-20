@@ -251,10 +251,11 @@ header {
     }
 
     .current-page-indicator {
+       white-space: nowrap;
         margin-left: 0px;
         margin-right: 8rem;
         font-weight: 600;
-        color: #adadad;
+        color: #C35027;
         text-align: right;
         direction: rtl;
     }
