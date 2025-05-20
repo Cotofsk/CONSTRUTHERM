@@ -253,7 +253,7 @@ header {
 .current-page-indicator {
     display: none;
     margin-left: auto;    /* Empuja el elemento a la derecha */
-    margin-right: 1rem;   /* Espacio del borde derecho */
+    margin-right: 50x;   /* Espacio del borde derecho */
     font-weight: 600;
     color: var(--primary-color);
     text-align: right;    /* Alinea el texto a la derecha dentro del span */
