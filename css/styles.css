@@ -252,10 +252,11 @@ header {
 
 .current-page-indicator {
     display: none;
-    margin-left: auto;
-    margin-right: 1rem;
+    margin-left: auto;    /* Empuja el elemento a la derecha */
+    margin-right: 1rem;   /* Espacio del borde derecho */
     font-weight: 600;
     color: var(--primary-color);
+    text-align: right;    /* Alinea el texto a la derecha dentro del span */
 }
 
 /* Muestra SOLO en móviles (usando el mismo breakpoint que el menú hamburguesa) */
