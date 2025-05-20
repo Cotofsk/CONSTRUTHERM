@@ -250,7 +250,7 @@ header {
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
 
-nav .current-page-indicator {
+.current-page-indicator {
     display: none;
     margin-left: auto;
     margin-right: 1rem;
@@ -260,8 +260,8 @@ nav .current-page-indicator {
 
 /* Muestra SOLO en móviles (usando el mismo breakpoint que el menú hamburguesa) */
 @media (max-width: 768px) {
-    nav .current-page-indicator {
-        display: none !important;;
+    .current-page-indicator {
+        display: block; /* Solo visible en móviles */
     }
 }
 
