@@ -252,18 +252,14 @@ header {
 
 .current-page-indicator {
     display: none;
-    margin-left: auto;    /* Empuja el elemento a la derecha */
-    margin-right: 50x;   /* Espacio del borde derecho */
     font-weight: 600;
     color: var(--primary-color);
-    text-align: right;    /* Alinea el texto a la derecha dentro del span */
-}
-
-/* Muestra SOLO en móviles (usando el mismo breakpoint que el menú hamburguesa) */
-@media (max-width: 768px) {
-    .current-page-indicator {
-        display: block !important;
-    }
+    margin-right: 0.5rem;  /* 5px de espacio entre texto e ícono */
+    text-align: right;      /* Alineación interna del texto */
+    white-space: nowrap;    /* Evita saltos de línea */
+    overflow: hidden;       /* Previene desbordamiento */
+    text-overflow: ellipsis; /* Muestra "..." si el texto es muy largo */
+    max-width: 70%;        /* Limita el ancho para no empujar el ícono */
 }
 
     .header-content {
