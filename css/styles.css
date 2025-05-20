@@ -261,7 +261,7 @@ header {
 /* Muestra SOLO en móviles (usando el mismo breakpoint que el menú hamburguesa) */
 @media (max-width: 768px) {
     .current-page-indicator {
-        display: block; /* Solo visible en móviles */
+        display: block !important;
     }
 }
 
