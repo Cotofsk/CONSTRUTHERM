@@ -261,7 +261,7 @@ nav .current-page-indicator {
 /* Muestra SOLO en móviles (usando el mismo breakpoint que el menú hamburguesa) */
 @media (max-width: 768px) {
     nav .current-page-indicator {
-        display: block;
+        display: none !important;;
     }
 }
 
