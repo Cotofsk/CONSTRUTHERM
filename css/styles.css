@@ -254,12 +254,11 @@ header {
     display: none;
     font-weight: 600;
     color: var(--primary-color);
-    margin-right: 0.5rem;  /* 5px de espacio entre texto e ícono */
+    margin-right: 8rem;  /* 5px de espacio entre texto e ícono */
     text-align: right;      /* Alineación interna del texto */
     white-space: nowrap;    /* Evita saltos de línea */
-    overflow: hidden;       /* Previene desbordamiento */
-    text-overflow: ellipsis; /* Muestra "..." si el texto es muy largo */
-    max-width: 70%;        /* Limita el ancho para no empujar el ícono */
+    direction: rtl;
+   
 }
 
     .header-content {
@@ -430,7 +429,7 @@ header {
 }
 
 .mobile-menu-toggle {
-    display: none;
+    display: unset;
     flex-direction: column;
     justify-content: space-between;
     width: 3rem;
